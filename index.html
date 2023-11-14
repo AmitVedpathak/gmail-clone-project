@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gmail Clone</title>
+</head>
+<body class="m-0 p-0 box-border bg-gray-100 ">
+    <!-- Main Container -->
+    <div>
+        <!-- Header -->
+        <header class="p-2 bg-gray-100">
+            <nav class="w-full flex justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class='bx bx-menu bx-sm cursor-pointer'></i>
+                    <img src="./Assets/gmail.png" alt="gmailLogo" class="w-28 h-10 cursor-pointer">
+                </div>
+                <div class="hidden md:flex md:flex-grow md:justify-center">
+                    <div class="relative left-9 top-[9px] text-gray-500">
+                        <i class='bx bx-search-alt-2 bx-sm'></i>
+                    </div>
+                    <input type="text" placeholder="Search email" class="border w-9/12 rounded-full p-2 pl-11 bg-blue-50 border-gray-400 focus:bg-white focus:outline-blue-100 focus:shadow-md">
+                </div>
+                <div class="flex space-x-4 bx-sm items-center">
+                    <div class="md:hidden cursor-pointer"><i class='bx bx-search-alt-2 '></i></div>
+                    <i class='bx bx-cog cursor-pointer hover:text-orange-600' ></i>
+                    <i class='bx bxs-widget cursor-pointer hover:text-green-400'></i>
+                    <i class='bx bxs-user-circle cursor-pointer hover:text-green-400'></i>
+                </div>
+            </nav>
+        </header>
+        <!-- Body Section -->
+        <section class="md:flex bg-gray-100 pt-2">
+            <!-- Left Section -->
+            <div class="hidden md:flex md:w-64 md:flex-col bg-gray-100">
+                <div class="w-4/5">
+                    <div class="flex items-start space-x-3 bg-blue-100 px-5 py-4 mx-3 rounded-xl w-36 hover:bg-blue-300 hover:text-white">
+                        <i class='bx bx-pencil bx-sm'></i>
+                        <p>compose</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 mt-2 w-11/12">
+                    <div class="pl-7 bg-blue-200 rounded-r-full py-1 cursor-pointer">
+                        <i class='bx bxs-inbox'></i> <span>Inbox</span>
+                    </div>
+                    <div class="pl-7 hover:rounded-r-full hover:bg-blue-200 py-1 cursor-pointer">
+                        <i class='bx bx-star'></i> <span>Starred</span>
+                    </div>
+                    <div class="pl-7 hover:rounded-r-full hover:bg-blue-200 py-1 cursor-pointer">
+                        <i class='bx bx-alarm-snooze'></i> <span>Snozeed</span>
+                    </div>
+                    <div class="pl-7 hover:rounded-r-full hover:bg-blue-200 py-1 cursor-pointer">
+                        <i class='bx bx-send'></i> <span>Sent</span>
+                    </div>
+                    <div class="pl-7 hover:rounded-r-full hover:bg-blue-200 py-1 cursor-pointer">
+                        <i class='bx bx-file-blank'></i> <span>Drafts</span>
+                    </div>
+                    <div class="pl-7 hover:rounded-r-full cursor-pointer">
+                        <i class='bx bx-chevron-down'></i> <span>More</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Middle Section -->
+            <div class="relative h-[86vh] overflow-y-scroll md:flex md:flex-grow  md:h-[86vh] bg-white md:rounded-lg text-sm">
+                <table class="w-full">
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>AJIO <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">AJIO</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Nov 5</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>PhonePe <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">PhonePe</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Dec 14</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>LinkedIn <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">LinkedIn</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Jan 12</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>UUCMS <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">UUCMS</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Feb 2</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>IPL <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">IPL</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Feb 5</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Facebook <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Facebook</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Mar 20</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>STC Clg <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">STC Clg</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">mar 23</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>AJIO <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">AJIO</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Nov 15</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>TedXl <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">TedXl</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">July 23</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Support <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Support</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">July 30</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Team <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Team</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Aug 2 </td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Support 24*7 <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Support 24*7</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Aug 21</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Paytm <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Paytm</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Aug 19</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Univerce <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Univerce</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Feb 21</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>AJIO <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">AJIO</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Nov 5</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>PhonePe <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">PhonePe</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Dec 2</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Govt <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Govt</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Jan 1</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Gmail <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Gmail</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Jan 1</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>CodePen <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">CodePen</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">May 23</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Google <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Google</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">May 4</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>PhonePe <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">PhonePe</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Dec 23</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Paytm <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Paytm</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Jan 13</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td><div class="flex items-center text-gray-500"><i class='bx bx-checkbox bx-sm'></i></div></td>
+                        <td class="hidden md:block"><div class="ml-3 text-gray-500"><i class='bx bx-star bx-sm'></i></div></td>
+                        <td class="md:hidden"><p>Contact <br>Lorem, ipsum dolor sit amet dolor sit amet...</p></td>
+                        <td class="hidden md:block"><div class="w-28 md:ml-3">Contact</div></td>
+                        <td class="hidden md:block md:flex-grow">
+                            <p class="ml-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p>
+                        </td>
+                        <td class="hidden md:block md:basis-14">Jan 12</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Right Section -->
+            <div class="hidden md:flex basis-10 md:flex-col space-y-2 bx-sm items-center">
+                <div class="hover:text-orange-500">
+                    <i class='bx bxs-calendar'></i>
+                </div>
+                <div class="hover:text-orange-500">
+                    <i class='bx bx-bulb'></i>
+                </div>
+                <div class="hover:text-orange-500">
+                    <i class='bx bxs-right-down-arrow-circle'></i>
+                </div>
+                <div class="hover:text-orange-500">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="hover:text-orange-500">
+                    <i class='bx bx-plus'></i>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="sticky bottom-0 bg-gray-100 w-full md:hidden">
+            <div class="flex justify-around bx-sm">
+                <div class="hover:text-orange-400">
+                    <i class='bx bx-video'></i>
+                </div>
+                <div class="hover:text-orange-400">
+                    <i class='bx bxs-inbox'></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

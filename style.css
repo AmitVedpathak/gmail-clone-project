@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+*{
+    @apply m-0 p-0 box-border
+}
+.tableRow{
+    @apply flex gap-1 items-center p-1 border-b border-gray-300 hover:bg-gray-100 md:space-x-0 md:hover:shadow-lg;
+}
+@tailwind utilities;
