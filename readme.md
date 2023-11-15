@@ -21,7 +21,7 @@ This project is a static web page created to mimic the appearance and layout of 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/gmail-clone.git
+    git clone https://github.com/AmitVedpathak/gmail-clone-project.git
     ```
 
 2. Open `index.html` in your preferred web browser.
