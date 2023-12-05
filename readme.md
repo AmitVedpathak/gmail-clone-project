@@ -6,6 +6,10 @@ A simple static web page project that replicates the Gmail interface.
 
 This project is a static web page created to mimic the appearance and layout of the Gmail interface. It is designed to be responsive and can be viewed on various devices.
 
+## Demo
+
+[Live Demo](https://amitv-gmail-clone.vercel.app/)
+
 ## Features
 
 - Replication of the Gmail user interface.
